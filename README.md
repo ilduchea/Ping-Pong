@@ -20,21 +20,22 @@
     -3
     -4
 
-3. It can find a number that is divisible by 3.
-  Example Input: 9
+3. It can find a number that is divisible by 15.
+  Example Input: 15
   Example Output: true
 
 4. It can find a number that is divisible by 5.
   Example Input: 10
   Example Output: true
 
-5. It can find a number that is divisible by 15.
-  Example Input: 15
+5. It can find a number that is divisible by 3.
+  Example Input: 9
   Example Output: true
 
 6. It can output a result of "PING" for a number that is divisible by 3.
   Example Input: 9
   Example Output: PING
+
 7. It can output a result of "PONG" for a number that is divisible by 5.
   Example Input: 10
   Example Output: PONG
@@ -46,7 +47,7 @@
 ## Setup/Installation Requirements
 
 * You can use the following link to open the site in your current browser:
-* https://ilduchea.github.io/Ping-Pong 
+* https://ilduchea.github.io/Ping-Pong
 * _Or_
 * You can clone the GitHub repository.
 * Open the index.html file found with in the Ping-Pong directory/folder in your browser.
