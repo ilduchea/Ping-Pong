@@ -58,7 +58,8 @@ var roundNuber = function (number) {
 
 // User Interface Logic
 $(function(){
-  $('#submit').click(function() {
+  $('form').submit(function(e) {
+    e.preventDefault();
     $('.results').hide();
     $('.results ul').text('');
     var userInput = $('.user-input input[name=number]').val();
