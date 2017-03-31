@@ -24,19 +24,24 @@ var replaceNumbers = function(array) {
   return array;
 };
 var findMultiples = function(array) {
-  var divisionNumbers = [15];
+  var divisionNumbers = [15, 5, 3];
+  var replaceWords = ["PING-PONG", "PONG", "PING"];
   var multiplesArray = [];
+  var j = 0
   divisionNumbers.forEach(function(number) {
     array.forEach(function(item) {
       if (item % number === 0) {
         multiplesArray.push(item);
       }
     });
-
+    var replaceWord = replaceWords[j];
     for (var i = 0; i < multiplesArray.length; i++) {
       var itemIndex = array.indexOf(multiplesArray[i]);
-      array.splice(itemIndex, 1, "PING-PONG");
+      if (itemIndex >= 0) {
+        array.splice(itemIndex, 1, replaceWord);
+      }
     };
+    j += 1;
     return array
   });
   return array;
