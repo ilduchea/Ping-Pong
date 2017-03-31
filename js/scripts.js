@@ -24,16 +24,22 @@ var replaceNumbers = function(array) {
   return array;
 };
 var findMultiples = function(array) {
-  var divisionNumbers = [3, 5];
+  var divisionNumbers = [15];
   var multiplesArray = [];
-  array.forEach(function(item) {
-    divisionNumbers.forEach(function(number) {
+  divisionNumbers.forEach(function(number) {
+    array.forEach(function(item) {
       if (item % number === 0) {
         multiplesArray.push(item);
       }
     });
+
+    for (var i = 0; i < multiplesArray.length; i++) {
+      var itemIndex = array.indexOf(multiplesArray[i]);
+      array.splice(itemIndex, 1, "PING-PONG");
+    };
+    return array
   });
-  return multiplesArray;
+  return array;
 };
 
 var countToNumber = function(number) {
