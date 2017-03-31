@@ -1,7 +1,54 @@
 /** {
   border: 1px solid black;
 }*/
+body {
+  background-color: #63A088;
+  text-align: center;
+  font-family: fantasy;
+}
 
 .results {
   display: none;
+}
+
+.rules {
+  float: left;
+}
+
+.red-background {
+  background-color: #56203D;
+  text-shadow: -1px 1px #53DD6C,
+               -1px -1px #53DD6C,
+               1px -1px #53DD6C,
+               1px 1px #53DD6C;
+}
+
+.green-background {
+  background-color: #53DD6C;
+}
+
+button.red-background:hover {
+  background-color: #53DD6C;
+  color: #63A088;
+  text-shadow: -1px 1px #56203D,
+               -1px -1px #56203D,
+               1px -1px #56203D,
+               1px 1px #56203D;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+ul {
+  width: 45%;
+  font-size: 18px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label,
+button#submit {
+  font-size: 20px;
 }
