@@ -24,14 +24,16 @@ var replaceNumbers = function(array) {
   return array;
 };
 var findMultiples = function(array) {
-  var divisionNumbers = [3, 5, 15];
+  var divisionNumbers = [3, 5];
+  var multiplesArray = [];
   array.forEach(function(item) {
     divisionNumbers.forEach(function(number) {
       if (item % number === 0) {
-        console.log(item);
+        multiplesArray.push(item);
       }
     });
   });
+  return multiplesArray;
 };
 
 var countToNumber = function(number) {
