@@ -27,7 +27,7 @@ body {
   background-color: #53DD6C;
 }
 
-button.red-background:hover {
+#submit.red-background:hover {
   background-color: #53DD6C;
   color: #63A088;
   text-shadow: -1px 1px #56203D,
@@ -48,6 +48,6 @@ ul {
 }
 
 label,
-button#submit {
+#submit {
   font-size: 20px;
 }

@@ -4,11 +4,27 @@ var pingPong = function(userInput) {
   var userNumber = parseFloat(userInput);
   var pingPongNumber = roundNuber(userNumber);
   var resultNumbers = countToNumber(pingPongNumber);
+  // var splitMultiples = findMultiples(resultNumbers);
+  // var resultArray = splitArray(splitMultiples);
   var resultArray = findMultiples(resultNumbers);
+  // var pingArray = [];
+  // var pongArray = [];
+  // var pingPongArray = [];
   resultArray.forEach(function(item) {
     $('.results ul').append(`<li>${item}</li>`);
   });
 };
+
+// var splitArray = function(array) {
+//   var multiplesString = array.toString();
+//   var stringArray = multiplesString.split(",PING,").join(",PING,*");
+//   var pingsArray = stringArray.split(",*")
+//   var pongsArray = pingsArray.split(",PONG,").join(",PONG,*");
+//   var pingsPongsArray = pongsArray.split(",*")
+//   var resultingArray = pingsPongsArray.split(",PING-PONG,").join(",PING-PONG,*");
+//   var finalArray = resultingArray.split(",*")
+//   return finalArray;
+// };
 
 var findMultiples = function(array) {
   var divisionNumbers = [15, 5, 3];
@@ -65,8 +81,8 @@ $(function(){
     var userInput = $('.user-input input[name=number]').val();
     var result = pingPong(userInput);
     $('.results #ping ul').text(result);
-    $('.results #pong ul').text(result);
-    $('.results #ping-pong ul').text(result);
+    // $('.results #pong ul').text(result);
+    // $('.results #ping-pong ul').text(result);
     $('.results').slideDown();
   });
 
