@@ -4,7 +4,9 @@ var pingPong = function(userInput) {
   var pingPongNumber = roundNuber(userNumber);
   var resultNumbers = countToNumber(pingPongNumber);
 
-  return `<li>${resultNumbers}</li>`;
+  resultNumbers.forEach(function(number) {
+    $('.results ul').append(`<li>${number}</li>`);
+  }); ;
 
 };
 
@@ -37,7 +39,7 @@ $(function(){
     var userInput = $('.user-input input[name=number]').val();
     var result = pingPong(userInput);
 
-    $('.results ul').append(result);
+    $('.results ul').text(result);
     $('.results').slideDown();
 
   });
