@@ -64,7 +64,9 @@ $(function(){
     $('.results ul').text('');
     var userInput = $('.user-input input[name=number]').val();
     var result = pingPong(userInput);
-    $('.results ul').text(result);
+    $('.results #ping ul').text(result);
+    $('.results #pong ul').text(result);
+    $('.results #ping-pong ul').text(result);
     $('.results').slideDown();
   });
 
