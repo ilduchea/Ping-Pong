@@ -8,7 +8,7 @@
   The site will take a numerical input from the user and show every number up to that number while replacing any number that is divisible by 3 with "PING", that is divisible by 5 with "PONG", and that is divisible by both with "PING-PONG".
 
 ## Specs
-1. It can count up to the provided number.
+1. It can count up to the user inputted number.
   Example Input: 4
   Example Output: [1,2,3,4]
 
@@ -46,7 +46,7 @@
 ## Setup/Installation Requirements
 
 * You can use the following link to open the site in your current browser:
-* _ _
+* https://ilduchea.github.io/Ping-Pong 
 * _Or_
 * You can clone the GitHub repository.
 * Open the index.html file found with in the Ping-Pong directory/folder in your browser.
