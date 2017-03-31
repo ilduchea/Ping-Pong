@@ -7,22 +7,9 @@ var pingPong = function(userInput) {
   var resultArray = findMultiples(resultNumbers);
   resultArray.forEach(function(item) {
     $('.results ul').append(`<li>${item}</li>`);
-  }); ;
-
+  });
 };
 
-var replaceNumbers = function(array) {
-  var indexNumber = array.indexOf(15);
-  array.splice(indexNumber, 1, "PING-PONG");
-
-  // array.forEach(function(number) {
-  //   if (number % 15 === 0) {
-  //     var indexNumber = array.indexOf(15);
-  //     array.splice(indexNumber, 1, "PING-PONG");
-  //   };
-  // });
-  return array;
-};
 var findMultiples = function(array) {
   var divisionNumbers = [15, 5, 3];
   var replaceWords = ["PING-PONG", "PONG", "PING"];
@@ -72,13 +59,12 @@ var roundNuber = function (number) {
 // User Interface Logic
 $(function(){
   $('#submit').click(function() {
+    $('.results').hide();
+    $('.results ul').text('');
     var userInput = $('.user-input input[name=number]').val();
     var result = pingPong(userInput);
-
     $('.results ul').text(result);
     $('.results').slideDown();
-
   });
-
 
 });
